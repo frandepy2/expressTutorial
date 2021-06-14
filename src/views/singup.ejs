@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('./partials/head') %>
-    <title>Login FRAN</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
@@ -13,21 +13,28 @@
             <div class="card mt-5">
                 <div class="card-body">
                     <h1 class="text-center">
-                        <span class="fa fa-sign-in"></span> Login
+                        <span class="fa fa-sign-in">
+                        </span> SIGN UP
                     </h1>
-                    <form action="/login" method="post">
+                    <form action="/signup" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" name="lastname" class="form-control">
+                        </div>
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="password">password</label>
+                            <label for="password">Password</label>
                             <input type="password" name="password" class="form-control">
                         </div>
                         <br>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-dark btn-lg" value="Enviar">
-                        </div>
+                        <input type="submit" class="btn btn-primary btn-lg col-md-12" value="Sign UP">
                     </form>
                 </div>
             </div>

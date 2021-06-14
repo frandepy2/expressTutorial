@@ -12,4 +12,15 @@ module.exports = (app,passport)=>{
     app.post('/login',(req,res)=>{
         console.log("peticion post");
     });
+
+    app.get('/signup',(req,res)=>{
+        res.render('singup',{
+            message : req.flash('singupmessage')
+        });
+    })
+
+    app.post('/signup',(req,res)=>{
+        console.log("peticion de registro");
+    })
+
 }
